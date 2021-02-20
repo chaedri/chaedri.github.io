@@ -6,3 +6,5 @@
 [Pandemic Real Estate in Vermont by County](VTrealEstate2.html)
 
 [Pandemic Real Estate Prices in Vermont by ZIP code](VTrealEstate.html)
+
+[Layer Styling in QGIS](qgis.md)
