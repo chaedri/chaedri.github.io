@@ -23,7 +23,7 @@ Building from the previous map, we add township names with a white background wi
 
 ## Layer Blending: Addition for Road Density
 
-![pic](https://chaedri.github.io/images/channelsounding.JPG)
+![pic](https://chaedri.github.io/images/Snip3.PNG)
 This map of OpenStreetMap roads in Denmark is made with the "addition" feature mode. If closer features are together, the brighter the color. The black base map makes the roads pop nicely and effectively shows density. 
 
 ## Layer Blending: Shapeburst Old-Fashioned USA Map
