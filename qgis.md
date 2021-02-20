@@ -28,5 +28,5 @@ This map of OpenStreetMap roads in Denmark is made with the "addition" feature m
 
 ## Layer Blending: Shapeburst Old-Fashioned USA Map
 
-![pic](https://chaedri.github.io/images/USA2.png)
+![pic](https://chaedri.github.io/images/USA2.PNG)
 This map replicates an old-fashion map of the USA using the Starburst fill and a random dot boundary. The random dots are made by randomly offseting dots from the boundary line using an expression. The colors are created with the color topology module which adds a new attribute with values indicating color. The color topology module selects the minimum number of colors required to ensure no states of the same color share a border.
