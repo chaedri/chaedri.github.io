@@ -15,71 +15,74 @@
 
 <div id='map'></div>
 <!-- Loads data from data_file.js -->
-<script src="./images/data_file.js"></script>
+<script src="images/data_file.js"></script>
 
 <script>
-//Sets up the map
-mapboxgl.accessToken = '<pk.eyJ1IjoiY2hhZWRyaWNoIiwiYSI6ImNrbGhqc2R5bjEzejkycG9pd245aTRwcmcifQ.uWiNjJ2Y3PAaB--3St8xwQ>';
-var map = new mapboxgl.Map({
-    container: 'map',
-    zoom: 12,
-    center: [-78.6319,35.7099],
-    pitch: 45,
-    style: 'mapbox://styles/mapbox/satellite-v9'
-});
-
-//Add Navigation Controls
-map.addControl(new mapboxgl.NavigationControl());
-
-//The total numbers of images found in data_file.js 
-var frameCount = layerInfos.length;
-//Default used to start animation with first image
-var currentImage = 0;
- 
-//Gets the current image 
-function getPath() {
-   return "images/" + layerInfos[currentImage].file;
-}
-
-//Convert Bounds to match mapbox gl source specs
-function grassBbox(bounds) {
-    return [
-        [bounds[1][1], bounds[1][0]],
-        [bounds[0][1], bounds[1][0]],
-        [bounds[0][1], bounds[0][0]],           
-        [bounds[1][1], bounds[0][0]]
-    ];
-}
- 
-//We need to wait for the map to load before we add the raster layer
-map.on('load', function() {
- 
-    //Create a new map source with the bounding box and url to your raster data.
-    map.addSource("grass", {
-        type: "image",
-        //Replace static file with function
-        url: getPath(), 
-        //Gets the bounds of the first image listed in images/data_file.js
-        coordinates: grassBbox(layerInfos[0].bounds)
+    //Sets up the map
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhZWRyaWNoIiwiYSI6ImNrbGhqc2R5bjEzejkycG9pd245aTRwcmcifQ.uWiNjJ2Y3PAaB--3St8xwQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        zoom: 12,
+        center: [-78.6319,35.7099],
+        pitch: 45,
+        style: 'mapbox://styles/mapbox/satellite-v9'
     });
 
-    //Now add a new layer to the map from the source you created
-    map.addLayer({
-        id: "grass-layer",
-        "type": "raster",
-        "source": "grass",
-        "paint": {
-            "raster-fade-duration": 0
-        }
-    });
+    //Add Navigation Controls
+    map.addControl(new mapboxgl.NavigationControl());
 
-    //Will update image every 200ms
-    setInterval(function() {
-        currentImage = (currentImage + 1) % frameCount;
-        map.getSource("grass").updateImage({ url: getPath() });
-    }, 200);
+    //The total numbers of images found in data_file.js 
+    var frameCount = layerInfos.length;
+    //Default used to start animation with first image
+    var currentImage = 0;
     
-});
+    //Gets the current image 
+    function getPath() {
+        return "images/" + layerInfos[currentImage].file;
+    }
+
+    //Convert Bounds to match mapbox gl source specs
+    function grassBbox(bounds) {
+        return [
+            [bounds[1][1], bounds[1][0]],
+            [bounds[0][1], bounds[1][0]],
+            [bounds[0][1], bounds[0][0]],
+            [bounds[1][1], bounds[0][0]]
+        ];
+    }
+    
+    //We need to wait for the map to load before we add the raster layer
+    map.on('load', function() {
+    
+        //Create a new map source with the bounding box and url to your raster data.
+        map.addSource("grass", {
+            type: "image",
+            //Replace static file with function
+            url: getPath(), 
+            //Gets the bounds of the first image listed in images/data_file.js
+            coordinates: grassBbox(layerInfos[0].bounds)
+        });
+
+        //Now add a new layer to the map from the source you created
+        map.addLayer({
+            id: "grass-layer",
+            "type": "raster",
+            "source": "grass",
+            "paint": {
+                "raster-fade-duration": 0
+            }
+        });
+
+        //Will update image every 200ms
+        setInterval(function() {
+            currentImage = (currentImage + 1) % frameCount; 
+            map.getSource("grass").updateImage({ url: getPath() });
+        }, 200);
+        
+    });
+
+
+
 
 </script>
 
