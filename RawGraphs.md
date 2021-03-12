@@ -1,6 +1,6 @@
 
 # Visualizations Made with RawGraphs.io
-As part of [Professor Laura Tateosian's Geovisualization course](https://wolfware.ncsu.edu/courses/details/?sis_id=SIS:2020:1:1:GIS:715:001), we've been learning different tools and software packages for creating visualizations with attractive, color-blind-friendly color ramps and palettes. In a recent lab, we focused on RawGraphs.io](https://rawgraphs.io/), a simple, web-based application that will take you from CSV to attractive visualization in less than 5 minutes. Here are a few examples we made in lab. 
+As part of [Professor Laura Tateosian's Geovisualization course](https://wolfware.ncsu.edu/courses/details/?sis_id=SIS:2020:1:1:GIS:715:001), we've been learning different tools and software packages for creating visualizations with attractive, color-blind-friendly color ramps and palettes. In a recent lab, we focused on [RawGraphs.io](https://rawgraphs.io/), a simple, web-based application that will take you from CSV to attractive visualization in less than 5 minutes. Here are a few examples we made in lab. 
 
 ## Orchestra Treemap
 This treemap is from a tutorial offered by RawGraphs showing the size and composition of four different orchestras. 
