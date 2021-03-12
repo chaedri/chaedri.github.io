@@ -5,6 +5,7 @@ As part of [Professor Laura Tateosian's Geovisualization course](https://wolfwar
 ## Orchestra Treemap
 This treemap is from a tutorial offered by RawGraphs showing the size and composition of four different orchestras. 
 ![pic](https://chaedri.github.io/images/treemap.png =1000x)
+<img src="https://chaedri.github.io/images/treemap.png" alt="treemap" width="1000"/>
 
 
 ## Invasive Species Bumpchart
