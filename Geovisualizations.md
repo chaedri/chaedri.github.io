@@ -9,6 +9,6 @@
 
 [Layer Styling in QGIS](qgis.md)
 
-[Visualizations Made with RawGraphs](RawGraphs.md)
+[Visualizations Made with RawGraphs.io](RawGraphs.md)
 
 [Grass-Mapbox Demonstration](mapbox.html)
