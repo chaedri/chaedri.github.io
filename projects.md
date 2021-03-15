@@ -1,3 +1,5 @@
+## GRASS GIS Development
+I recently wrote my first GRASS GIS add-on module, call r.centroids! Given a map(raster) with clumps of same-valued pixels such as a watershed map, r.centroids will return the center point of each area. This isn't a novel GRASS GIS capability; a centroid function is nested in the r.volume module but, it's inconvenient (not to mention a little counterintuitive) to find and use r.volume for centroids. So, a created a wrapper module for r.volume that just returns the centroids. It might be simple but it's an exciting first Open-Source software contribution! Check out the man pages [here](https://grass.osgeo.org/grass78/manuals/addons/r.centroids.html).
 
 ## Applications of Tangible Landscape in Geomorphology and Hydrology
 
