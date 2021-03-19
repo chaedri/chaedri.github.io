@@ -11,4 +11,6 @@
 
 [Visualizations Made with RawGraphs.io](RawGraphs.md)
 
+[Blender and Sketchfab](blenderSketchfab.md)
+
 [Grass-Mapbox Demonstration](mapbox.html)
