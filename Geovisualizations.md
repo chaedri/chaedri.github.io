@@ -14,3 +14,5 @@
 [Blender and Sketchfab](blenderSketchfab.md)
 
 [Grass-Mapbox Demonstration](mapbox.html)
+
+[Kepler.gl Visualizations](kepler.md)
