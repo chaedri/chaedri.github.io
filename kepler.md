@@ -9,5 +9,6 @@ Click image to see full size.
 
 
 ## [Vermont Composting](kepler_VT.html)
+Click link to see visualization.
 
 ** A disclaimer about the data quality from VT Geodata: "These datasets were compared and combined to provide the bulk of the food scrap generators (FSG) of food waste generators in the state. This map contains inaccuracies. With over 6,000 entries and a near constant opening and closing of businesses around the state, it is challenging to keep up-to-date information. Weekly food scrap tonnages for food scrap generators are estimates only."
