@@ -9,7 +9,7 @@ Click image to see full size.
 
 
 ## [Vermont Composting](kepler_VT.html)
-Click link to see visualization.
+[Click link to see visualization.](kepler_VT.html)
 
 I found an interesting [dataset](https://geodata.vermont.gov/datasets/VTANR::food-scrap-generators) from the Vermont GIS Data Portal on Food Scrap Generators in Vermont. The dataset contains records of businesses and institutions such as restaurants, grocery stores, food manufacturers, and hospitals and an estimate of how much food waste they produce. I think this dataset was likely created because of [Vermont's recent mandatory composting law](https://dec.vermont.gov/waste-management/solid/materials-mgmt/organic-materials). So, if you've been thinking of starting a composting business and are wondering where in Vermont the demand is highest, look no further!
 
