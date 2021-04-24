@@ -16,3 +16,5 @@
 [Grass-Mapbox Demonstration](mapbox.html)
 
 [Kepler.gl Visualizations](kepler.md)
+
+[Leaflet Demo: London Point, Circle and Polygon](leafletLab/leafletMaps.html)
