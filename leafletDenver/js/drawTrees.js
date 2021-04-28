@@ -16,12 +16,12 @@ L.tileLayer(
 var gjData = '../data/maples.geojson';
 
 
-function onEachOfMyFeatures(feature, layer) {
-    // does this feature have a property named popupContent?
-    if (feature.properties && feature.properties.SPECIES_CO) {
-        layer.bindPopup(feature.properties.SPECIES_CO);
-    }
-};
+// function onEachOfMyFeatures(feature, layer) {
+//     // does this feature have a property named popupContent?
+//     if (feature.properties && feature.properties.SPECIES_CO) {
+//         layer.bindPopup(feature.properties.SPECIES_CO);
+//     }
+// };
 
 
 var pointStyle = {
@@ -42,8 +42,8 @@ xhr.onload = function() {
     treeLayer = L.geoJSON(xhr.response, {
                         pointToLayer: function (feature, latlng) {
                                return L.circleMarker(latlng, pointStyle);
-       	               },
-                        onEachFeature: onEachOfMyFeatures
+       	               } //,
+                        // onEachFeature: onEachOfMyFeatures
                        }
                   )
     treeLayer.addTo(mymap);
