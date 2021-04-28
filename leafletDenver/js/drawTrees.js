@@ -1,5 +1,14 @@
 var mymap = L.map('mapid').setView([39.750,-104.9515], 16);
 
+
+function onEachOfMyFeatures(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.SPECIES_CO) {
+        layer.bindPopup(feature.properties.SPECIES_CO);
+    }
+}
+
+
 // Background
 L.tileLayer(
     'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', 
@@ -24,7 +33,8 @@ xhr.onload = function() {
     treeLayer = L.geoJSON(xhr.response, {
                         pointToLayer: function (feature, latlng) {
                                return L.circleMarker(latlng, pointStyle);
-       	               }
+       	               },
+                        onEachFeature: onEachOfMyFeatures
                        }
                   )
        treeLayer.addTo(mymap);
@@ -33,7 +43,7 @@ xhr.onload = function() {
 xhr.send();
 
 var pointStyle = {
-    radius: 3,
+    radius: 5,
     fillColor: "#134413",
     color: "#000",
     weight: 1,
