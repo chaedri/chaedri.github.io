@@ -15,7 +15,7 @@ L.tileLayer(
 
 
 // Geojson Layer
-var gjData = '../data/trees.geojson'
+var gjData = '../data/maples.geojson'
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
