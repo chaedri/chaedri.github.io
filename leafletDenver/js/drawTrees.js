@@ -13,43 +13,8 @@ L.tileLayer(
         accessToken: 'pk.eyJ1IjoiY2hhZWRyaWNoIiwiYSI6ImNrbGhqc2R5bjEzejkycG9pd245aTRwcmcifQ.uWiNjJ2Y3PAaB--3St8xwQ'
     }).addTo(mymap);
 
-var geojsonFeature = {
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
-    }
-};
-
-var myStyle = {
-    "color": "#b53737",
-    "weight": 20,
-    "opacity": 0.6
-};
-
 // Geojson Layer
 var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson'
-
-if(gjData.exists()){
-    write('The file exists');
-  }else{
-        // Layer 1
-    // Single point
-    var myLayer = L.geoJSON("", {
-        style: myStyle
-    }
-    );
-    myLayer.addData(geojsonFeature);
-    myLayer.addTo(mymap);
-
-  }
-
-
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
