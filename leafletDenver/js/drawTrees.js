@@ -36,7 +36,9 @@ var myStyle = {
 var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson'
 
 if(gjData.exists()){
-    // Layer 1
+    write('The file exists');
+  }else{
+        // Layer 1
     // Single point
     var myLayer = L.geoJSON("", {
         style: myStyle
@@ -44,7 +46,9 @@ if(gjData.exists()){
     );
     myLayer.addData(geojsonFeature);
     myLayer.addTo(mymap);
-}
+
+  }
+
 
 
 let xhr = new XMLHttpRequest();
