@@ -1,6 +1,5 @@
 var mymap = L.map('mapid').setView([39.750,-104.9515], 16);
 
-
 // Background
 L.tileLayer(
     'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', 
@@ -14,7 +13,7 @@ L.tileLayer(
     }).addTo(mymap);
 
 // Geojson Layer
-var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson'
+var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson';
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
