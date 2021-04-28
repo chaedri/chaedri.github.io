@@ -1,7 +1,6 @@
 var mymap = L.map('mapid').setView([39.750,-104.9515], 16);
 
 // functions and styles
-
 function onEachOfMyFeatures(feature, layer) {
     // does this feature have a property named popupContent?
     if (feature.properties && feature.properties.SPECIES_CO) {
@@ -20,7 +19,7 @@ var pointStyle = {
 
 // Geojson
 
-var gjData =[
+var gjData = [
     { "type": "Feature", "properties": { "SITE_ID": "289084", "SPECIES_CO": "Maple, Tatarian", "SPECIES_BO": "Acer tataricum", "DIAMETER": "0 to 6", "STEMS": "7", "LOCATION_N": "Denver Zoo", "LOCATION_C": null, "SITE_DESIG": "Private Property Tree", "INVENTORY_": "12\/20\/2016", "ADDRESS": "3560", "STREET": "E 23RD AVE", "NEIGHBOR": "City Park", "X_LONG": -104.94789724, "Y_LAT": 39.74978162, "WORKGROUP": "Sister Agencies", "NOTABLE": "No" }, "geometry": { "type": "Point", "coordinates": [ -104.9479, 39.74978 ] } },
     { "type": "Feature", "properties": { "SITE_ID": "289100", "SPECIES_CO": "Maple, Amur", "SPECIES_BO": "Acer ginnala", "DIAMETER": "0 to 6", "STEMS": "3", "LOCATION_N": "Denver Zoo", "LOCATION_C": null, "SITE_DESIG": "Private Property Tree", "INVENTORY_": "12\/20\/2016", "ADDRESS": "3560", "STREET": "E 23RD AVE", "NEIGHBOR": "City Park", "X_LONG": -104.94734616, "Y_LAT": 39.74938967, "WORKGROUP": "Sister Agencies", "NOTABLE": "No" }, "geometry": { "type": "Point", "coordinates": [ -104.94735, 39.74939 ] } },
     { "type": "Feature", "properties": { "SITE_ID": "289113", "SPECIES_CO": "Maple, Tatarian", "SPECIES_BO": "Acer tataricum", "DIAMETER": "0 to 6", "STEMS": "7", "LOCATION_N": "Denver Zoo", "LOCATION_C": null, "SITE_DESIG": "Private Property Tree", "INVENTORY_": "12\/20\/2016", "ADDRESS": "3560", "STREET": "E 23RD AVE", "NEIGHBOR": "City Park", "X_LONG": -104.94781916, "Y_LAT": 39.74978244, "WORKGROUP": "Sister Agencies", "NOTABLE": "No" }, "geometry": { "type": "Point", "coordinates": [ -104.94782, 39.74978 ] } },
