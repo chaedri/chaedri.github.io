@@ -15,7 +15,7 @@ L.tileLayer(
 
 
 // Geojson Layer
-var gjData = '../data/maples.geojson'
+var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson'
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
