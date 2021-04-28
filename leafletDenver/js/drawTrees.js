@@ -13,7 +13,7 @@ L.tileLayer(
     }).addTo(mymap);
 
 // Geojson Layer
-var gjData = 'https://chaedri.github.io/leafletDenver/data/maples.geojson';
+var gjData = '../data/maples.geojson';
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
