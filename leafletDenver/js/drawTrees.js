@@ -1,14 +1,5 @@
 var mymap = L.map('mapid').setView([39.750,-104.9515], 16);
 
-
-function onEachOfMyFeatures(feature, layer) {
-    // does this feature have a property named popupContent?
-    if (feature.properties && feature.properties.SPECIES_CO) {
-        layer.bindPopup(feature.properties.SPECIES_CO);
-    }
-};
-
-
 // Background
 L.tileLayer(
     'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', 
@@ -23,6 +14,24 @@ L.tileLayer(
 
 // Geojson Layer
 var gjData = '../data/maples.geojson';
+
+
+function onEachOfMyFeatures(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.SPECIES_CO) {
+        layer.bindPopup(feature.properties.SPECIES_CO);
+    }
+};
+
+
+var pointStyle = {
+    radius: 5,
+    fillColor: "#134413",
+    color: "#000",
+    weight: 1,
+    opacity: 0.35,
+    fillOpacity: 0.8
+    };
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', gjData);
@@ -42,12 +51,4 @@ xhr.onload = function() {
 };
 xhr.send();
 
-var pointStyle = {
-    radius: 5,
-    fillColor: "#134413",
-    color: "#000",
-    weight: 1,
-    opacity: 0.35,
-    fillOpacity: 0.8
-    };
 
