@@ -19,4 +19,4 @@
 
 [Leaflet Demo: London Point, Circle and Polygon](leafletLab/leafletMaps.html)
 
-[Leaflet Demo: Trees in Denver's Zoo](leafletDenver/leafletMaps.html)
+[Leaflet Demo: Trees in Denver's Zoo](leafletDenver/leafletDenver.html)

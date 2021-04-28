@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "maples",
+"name": "DenverZooTrees",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "SITE_ID": "289084", "SPECIES_CO": "Maple, Tatarian", "SPECIES_BO": "Acer tataricum", "DIAMETER": "0 to 6", "STEMS": "7", "LOCATION_N": "Denver Zoo", "LOCATION_C": null, "SITE_DESIG": "Private Property Tree", "INVENTORY_": "12\/20\/2016", "ADDRESS": "3560", "STREET": "E 23RD AVE", "NEIGHBOR": "City Park", "X_LONG": -104.94789724, "Y_LAT": 39.74978162, "WORKGROUP": "Sister Agencies", "NOTABLE": "No" }, "geometry": { "type": "Point", "coordinates": [ -104.9479, 39.74978 ] } },
