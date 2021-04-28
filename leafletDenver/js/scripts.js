@@ -14,7 +14,7 @@ function onEachOfMyFeatures(feature, layer) {
     if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
     }
-}
+};
 
 var geojsonMarkerOptions = {
     radius: 8,

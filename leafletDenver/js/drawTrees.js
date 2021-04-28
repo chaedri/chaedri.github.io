@@ -6,7 +6,7 @@ function onEachOfMyFeatures(feature, layer) {
     if (feature.properties && feature.properties.SPECIES_CO) {
         layer.bindPopup(feature.properties.SPECIES_CO);
     }
-}
+};
 
 
 // Background
