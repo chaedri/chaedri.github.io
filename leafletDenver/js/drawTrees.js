@@ -46,7 +46,7 @@ xhr.onload = function() {
                         onEachFeature: onEachOfMyFeatures
                        }
                   )
-       treeLayer.addTo(mymap);
+    treeLayer.addTo(mymap);
 
 };
 xhr.send();
