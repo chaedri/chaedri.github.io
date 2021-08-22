@@ -1,3 +1,10 @@
+
+## [Google Summer of Code](https://trac.osgeo.org/grass/wiki/GSoC/2021/JupyterAndGRASS)
+I continued working on GRASS GIS through Google Summer of Code 2021. My project focused on improving the interation of GRASS GIS and Jupyter Notebooks. I created a new subpackage for GRASS GIS called `grass.jupyter` that includes functions for simplifying the launch of GRASS GIS in Jupyter Notebooks and two different classes that help users display GRASS data in Jupyter Notebooks. One of them, `InteractiveMaps`, allows users to easily create interactive maps with [`folium`](https://python-visualization.github.io/folium/index.html), a leaflet library for Python. I learned a lot about Python and GRASS coding conventions!
+
+[Try `grass.jupyter` in Binder](https://mybinder.org/v2/gh/OSGeo/grass/c173461?urlpath=lab%2Ftree%2Fdoc%2Fnotebooks%2Fgrass_jupyter.ipynb)
+
+
 ## GRASS GIS Development
 I recently wrote my first GRASS GIS add-on module, call r.centroids! Given a map(raster) with clumps of same-valued pixels such as a watershed map, r.centroids will return the center point of each area. This isn't a novel GRASS GIS capability; a centroid function is nested in the r.volume module but, it's inconvenient (not to mention a little counterintuitive) to find and use r.volume for centroids. So, a created a wrapper module for r.volume that just returns the centroids. It might be simple but it's an exciting first Open-Source software contribution! Check out the man pages [here](https://grass.osgeo.org/grass78/manuals/addons/r.centroids.html).
 
