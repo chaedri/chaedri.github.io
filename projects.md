@@ -4,6 +4,10 @@ I continued working on GRASS GIS through Google Summer of Code 2021. My project 
 
 [Try `grass.jupyter` in Binder](https://mybinder.org/v2/gh/OSGeo/grass/c173461?urlpath=lab%2Ftree%2Fdoc%2Fnotebooks%2Fgrass_jupyter.ipynb)
 
+#### Watch FOSS4G talk on grass.jupyter
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jjgghz_EzWQ?start=5005" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## GRASS GIS Development
 I recently wrote my first GRASS GIS add-on module, call r.centroids! Given a map(raster) with clumps of same-valued pixels such as a watershed map, r.centroids will return the center point of each area. This isn't a novel GRASS GIS capability; a centroid function is nested in the r.volume module but, it's inconvenient (not to mention a little counterintuitive) to find and use r.volume for centroids. So, a created a wrapper module for r.volume that just returns the centroids. It might be simple but it's an exciting first Open-Source software contribution! Check out the man pages [here](https://grass.osgeo.org/grass78/manuals/addons/r.centroids.html).
