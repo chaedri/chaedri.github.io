@@ -3,11 +3,11 @@ I'm working with Vaclav Petras and Helena Mitasova to continue developing `grass
 
 [See GRASS GIS and grass.jupyter on GitHub](https://github.com/OSGeo/grass/tree/main/python/grass/jupyter)
 
-[View example notebook for basic grass.jupyter usage](notebooks/InteractiveMap.html)
+[View example notebook for basic grass.jupyter usage](notebooks/grass_jupyter.html)
 
-[View example notebook for space time dataset visualizations](notebooks/InteractiveMap.html)
+[View example notebook for space time dataset visualizations](notebooks/temporal.html)
 
-[View example notebook for interactive GRASS maps](notebooks/InteractiveMap.html)
+[View example notebook for interactive GRASS maps](notebooks/GRASS-folium.html)
 
 ## [Google Summer of Code 2021](https://trac.osgeo.org/grass/wiki/GSoC/2021/JupyterAndGRASS)
 I continued working on GRASS GIS through Google Summer of Code 2021. My project focused on improving the interation of GRASS GIS and Jupyter Notebooks. I created a new subpackage for GRASS GIS called `grass.jupyter` that includes functions for simplifying the launch of GRASS GIS in Jupyter Notebooks and two different classes that help users display GRASS data in Jupyter Notebooks. One of them, `InteractiveMaps`, allows users to easily create interactive maps with [`folium`](https://python-visualization.github.io/folium/index.html), a leaflet library for Python. I learned a lot about Python and GRASS coding conventions!
