@@ -5,8 +5,6 @@ I'm working with Vaclav Petras and Helena Mitasova to continue developing `grass
 
 [View example notebook for basic grass.jupyter usage](notebooks/grass_jupyter.html)
 
-[View example notebook for space time dataset visualizations](notebooks/temporal.html)
-
 [View example notebook for interactive GRASS maps](notebooks/GRASS-folium.html)
 
 ## [Google Summer of Code 2021](https://trac.osgeo.org/grass/wiki/GSoC/2021/JupyterAndGRASS)
