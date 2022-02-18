@@ -1,6 +1,8 @@
 
 ## GIS715/714 Geovisualizations
 
+As part of GIS715 (Geovisualizations) and GIS714 (Geospatial Computation and Simulation), I made a variety of web-based geovisualizations. Click the links below to explore.
+
 [2016 Presidential Election Tableau Story](presElec2016.html)
 
 [Pandemic Real Estate in Vermont by County](VTrealEstate2.html)
