@@ -1,6 +1,8 @@
 ## [grass.jupyter Development](https://trac.osgeo.org/grass/wiki/GSoC/2021/JupyterAndGRASS/MiniGrant2022)
 I'm working with Vaclav Petras and Helena Mitasova to continue developing `grass.jupyter`, a subpackage for GRASS GIS that provides visualization functions for view GRASS data in Jupyter Notebooks. The project began with Google Summer of Code 2021 and continues with a GRASS Mini Project Grant during January-March 2022. 
 
+[FOSS4G 2022 Florence Presentation: Using GRASS GIS in Jupyter Notebooks: An Introduction to grass.jupyter](FOSS4G_2022_grass_jupyter.slides.html)
+
 [Check out the news post on the GRASS GIS site](https://grass.osgeo.org/news/2022_06_05_results_student_grant_caitlin/)
 
 [See GRASS GIS and grass.jupyter on GitHub](https://github.com/OSGeo/grass/tree/main/python/grass/jupyter)
